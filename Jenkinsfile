@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Clone'){
                 steps{
-                    sh "git-clone https://github.com/obianujuaku01/QA-Project.git"
+                   checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/obianujuaku01/QA-Project.git']]])
                 }
             }
         }
