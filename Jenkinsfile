@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage('Clone'){
                 steps{
-                    sh "git-clone https://github.com/obianujuaku01/QA-Project.git "
+                    sh "git-clone https://github.com/obianujuaku01/QA-Project.git"
                 }
             }
         }
